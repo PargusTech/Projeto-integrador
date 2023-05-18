@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Conta</title>
     <link rel = "stylesheet" type = "text/css" href = "create_account.css">
+    <link rel = "icon" href = "pargus_tech.jpg">
 </head>
 <body>
     <header class = "header">
@@ -29,15 +30,18 @@
         <div class = "confirm-w50">
             <input type = "password" id = "confirm_password" name = "confirm_password" placeholder= "Confirmar Senha"  autocomplete = "off" required>
         </div>
+            
+            <div class = "mostrar-senha">
+                <input type = "checkbox" id = "mostrar-senha" name = "mostrar-senha" onclick = "mostrar_senha()">
+                <label for = "mostrar-senha">Mostrar Senha</label>
+            </div>
 
-        <div class = "button">
-            <a href = "login.html">criar conta</a>
+            <div class = "button">
+                <a href = "login.html">criar conta</a>
+            </div>
+            
+            <script type = "text/javascript" src = "create_account.js"></script>
         </div>
 
-        <!-- <div class = "checkbox">
-            <input type = "checkbox" id = "checkbox" name = "checkbox" value = "checkbox">
-            <label for = "checkbox" > Lembrar-me</label>
-        </div> -->
-    </div>
 </body>
 </html>
