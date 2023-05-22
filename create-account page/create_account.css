@@ -87,7 +87,7 @@ body {
     background-color: lightgrey;
 }
 .email input::placeholder, .w50 input::placeholder, .confirm-w50 input::placeholder{
-    color: gray;
+    color: #a9a9a9;
     font-weight: bold;
 }
 .email:focus{
@@ -118,7 +118,7 @@ body {
     float: left;
     font-size: 10px;
     position: absolute;
-    left: 535px;
+    left: 515px;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -146,11 +146,11 @@ body {
     text-align: center;
     letter-spacing: 1px;
     text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .button a:hover{
-    background-color: rgba(30,60,114, 0.9);
-    /* background-color: white;
+    background-color: white;
     color: #1e3c72;
-    border: 2px solid #1e3c72; */
+    border: 2px solid #1e3c72;
     transition: 0.4s;
 }
