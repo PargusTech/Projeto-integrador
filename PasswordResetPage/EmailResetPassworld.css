@@ -62,7 +62,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255,255,255,1);
     padding: 3rem 1rem;
     border-radius: 5px;
     margin-left: auto;
@@ -81,12 +81,14 @@ form {
 
 /* Estiliza a imagem do cabeçalho de redefinição. */
 .reset-header img {
-    display: block;
+    display: grid;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -238px;
+    margin-top: -70px;
+    justify-content: center;
     margin-bottom: auto;
-    width: 49%;
+    height: 250px;
+    width: 70%;
     mix-blend-mode: multiply;
 }
 
@@ -94,27 +96,34 @@ form {
 .reset-header h1 {
     text-align: center;
     font-weight: bold;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 40px;
     margin-left: 100px;
     margin-right: 100px;
-    border-bottom: 2px solid #000;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    color: black;
 }
 
 /* Estiliza o parágrafo do cabeçalho de redefinição, incluindo alinhamento, tamanho da fonte e estilo de fonte. */
 .reset-header p {
     font-weight: normal;
-    text-align: center;
+    margin-left: 20px;
+    text-align: left;
     font-size: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Estiliza os campos de entrada do grupo de redefinição, incluindo altura, largura, estilo de borda, cor do texto e cor de fundo. */
-.reset-group input { 
-    height: 30px;
-    width: 300px;
+.reset-group input {
+    height: 40px;
+    width: 600px;
     border: 2px solid transparent;
     color: black;
     background-color: gainsboro;
@@ -122,7 +131,13 @@ form {
     margin-bottom: 50px;
     border-radius: 5px;
 }
-
+.reset-group input:hover{
+    background-color: lightgrey;
+}
+.reset-group input::placeholder{
+    color: #a9a9a9;
+    font-weight: bold;
+}
 /* Estiliza o campo de entrada do grupo de redefinição quando está em foco, alterando a cor da borda. */
 .reset-group input:focus {
     border-color: #1e3c72;
@@ -130,9 +145,9 @@ form {
 }
 
 /* Estiliza o botão de redefinição, incluindo tamanho, cores, estilo de borda, margem e estilo de fonte. */
-button {
+.submit-email a {
     display: inline-block;
-    padding-top: 1px;
+    padding-top: 6px;
     background-color: #1e3c72;
     color: white;
     height: 42px;
@@ -151,8 +166,7 @@ button {
 }
 
 /* Estiliza o botão de redefinição quando o mouse está sobre ele, alterando as cores de fundo, texto e borda. */
-button:hover {
-    background-color: rgba(30, 60, 114, 0.9);
+.submit-email a:hover {
     background-color: white;
     color: #1e3c72;
     border: 2px solid #1e3c72;
