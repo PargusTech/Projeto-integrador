@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body {
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%);
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+.header{
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%);
+    height: 50px;
+    width: 100%;
+    transition: 0.4s;
+}
+.header a{
+    display: inline-block;
+    padding-top: 3px;
+    background-color: white;
+    color: #1e3c72;
+    height: 30px;
+    width: 8%;
+    border: 2px solid transparent;
+    margin: 10px;   
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    box-shadow: 0 0 10px 0 darkgrey;
+}
+.header a:hover{
+    background-color: #1e3c72;
+    color: white;
+    border: 2px solid white;
+    transition: 0.4s;
+}
+.login-form{
+    width: 45%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,1);
+    padding: 3rem 1rem;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    box-shadow: 0 0 10px 0 darkgrey;
+}
+.form-header img{
+    background-color: none;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    margin-bottom: -10px;
+    margin-top: -110px;
+    mix-blend-mode: multiply;
+}
+.form-header h1{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.email input{
+    height: 30px;
+    width: 300px;
+    border: 2px solid transparent;
+    color: black;
+    background-color: gainsboro;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    outline: none;
+    padding: 8px 0 8px 35px;
+}
+.email input:hover, .w50 input:hover, .confirm-w50 input:hover{
+    background-color: lightgrey;
+}
+.email input::placeholder, .w50 input::placeholder, .confirm-w50 input::placeholder{
+    color: #a9a9a9;
+    font-weight: bold;
+}
+input[type = "email"]:focus, input[type = "password"]:focus{
+    border-color: #1e3c72;
+}
+.w50 input{
+    height: 30px;
+    width: 300px;
+    border: 2px solid transparent;
+    color: black;
+    background-color: gainsboro;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    outline: none;
+    padding: 8px 0 8px 35px;
+}
+.confirm-w50 input{
+    height: 30px;
+    width: 300px;
+    border: 2px solid transparent;
+    color: black;
+    background-color: gainsboro;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    outline: none;
+    padding: 8px 0 8px 35px;
+}
+.mostrar-senha input{
+    height: 20px;
+    float: left;
+    font-size: 10px;
+    margin-right: 280px;
+    /* position: absolute;
+    left: 535px; */
+    cursor: pointer;
+    border-radius: 5px;
+}
+.mostrar-senha label{
+    font-size: 12px;
+    margin-left: -270px;
+    pointer-events: none;
+    font-weight: bold;
+}
+.button a {
+    display: inline-block;
+    padding-top: 6px;
+    background-color: #1e3c72;
+    color: white;
+    height: 40px;
+    width: 300px;
+    border: 2px solid transparent;
+    margin: 10px;
+    margin-top: 60px;   
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+}
+.button a:hover{
+    background-color: white;
+    color: #1e3c72;
+    border: 2px solid #1e3c72;
+    transition: 0.4s;
+}
+.email i{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.w50 i{
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.confirm-w50 i{
+        position: absolute;
+        margin-top: 7px;
+        margin-left: 10px;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px){
+    .header{
+        margin-bottom: 30px;
+    }
+    .header a{
+        width: 110px;
+    }
+    .login-form{
+        height:75vh
+    }
+    .mostrar-senha input {
+        left: 390px;
+    }
+    .mostrar-senha label {
+        margin-left: -270px;
+    }
+    .form-header img{
+        margin-top: -110px;
+    }
+    .form-header h1{
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 900px){
+    .header{
+        margin-bottom: 30px;
+    }
+    .header a{
+        width: 110px;
+    }
+    .login-form{
+        height:75vh;
+        width: 50vh;
+    }
+}
+@media only screen and (max-width: 450px){
+    .header{
+        margin-bottom: 30px
+    }
+    .header a{
+        width: 100px;
+        margin-left: 20px;
+    }
+    .form-header img{
+        margin-top: -110px;
+        width: 110%;
+        margin-left: -18px;
+    }
+    .login-form{
+        width: 90%;
+        height: 80vh;
+    }
+    .email input{
+        width: 330px;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    .w50 input{
+        width: 330px;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    .confirm-w50 input{
+        width: 330px;
+        height: 35px;
+    }
+    .mostrar-senha input{
+        margin-left: -30px;
+        margin-bottom: 20px;
+    }
+    .button a{
+        width: 330px;
+    }
+}
