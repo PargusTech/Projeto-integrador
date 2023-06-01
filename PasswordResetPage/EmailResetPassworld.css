@@ -11,7 +11,7 @@
 
 /* Define o plano de fundo do corpo do documento com uma imagem de gradiente e centraliza verticalmente os elementos. */
 body {
-    background-image: linear-gradient(to top, #184063 0%, #184063 1%);
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%);
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@ body {
 
 /* Define as propriedades do cabeçalho, incluindo o plano de fundo e a transição. */
 .VoltarLogin {
-    background-image:#184063;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%);
     height: 50px;
     width: 100%;
     transition: 0.4s;
@@ -30,12 +30,12 @@ body {
 .VoltarLogin a {
     display: inline-block;
     padding-top: 3px;
-    background-color: whitesmoke;
-    color: #184063;
+    background-color: white;
+    color: #1e3c72;
     height: 30px;
     width: 8%;
     border: 2px solid transparent;
-    margin: 10px;
+    margin: 10px;   
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
@@ -43,13 +43,13 @@ body {
     text-align: center;
     letter-spacing: 1px;
     text-decoration: none;
-    box-shadow: 0 0 20px 0 darkgrey;
+    box-shadow: 0 0 10px 0 darkgrey;
 }
 
 .VoltarLogin a:hover {
-    background-color: #184063;
-    color: whitesmoke;
-    border: 2px solid whitesmoke;
+    background-color: #1e3c72;
+    color: white;
+    border: 2px solid white;
     transition: 0.4s;
 }
 
@@ -62,13 +62,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: rgba(255,255,255,1);
     padding: 3rem 1rem;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
-    box-shadow: 0 0 20px 0 darkgrey;
+    box-shadow: 0 0 10px 0 darkgrey;
 }
 
 /* Estiliza o formulário e seu conteúdo, alinhando-os verticalmente e centralmente. */
@@ -81,12 +81,13 @@ form {
 
 /* Estiliza a imagem do cabeçalho de redefinição. */
 .reset-header img {
+    align-items: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -238px;
+    margin-top: -135px;
     margin-bottom: auto;
-    width: 49%;
+    width: 54.7%;
     mix-blend-mode: multiply;
 }
 
@@ -99,7 +100,7 @@ form {
     margin-bottom: 40px;
     margin-left: 100px;
     margin-right: 100px;
-    border-bottom: 2px solid whitesmoke;
+    border-bottom: 2px solid white;
 }
 
 /* Estiliza o parágrafo do cabeçalho de redefinição, incluindo alinhamento, tamanho da fonte e estilo de fonte. */
@@ -117,10 +118,11 @@ form {
     width: 300px;
     border: 2px solid transparent;
     color: black;
-    background-color: white;
+    background-color: gainsboro;
     font-weight: bold;
     margin-bottom: 50px;
-    border-radius: 60px;
+    border-radius: 5px;
+    outline: none;
     padding: 8px 0 8px 35px;
 }
 
@@ -128,8 +130,8 @@ form {
 button {
     display: inline-block;
     padding-top: 1px;
-    background-color: #184063;
-    color: whitesmoke;
+    background-color: #1e3c72;
+    color: white;
     height: 42px;
     width: 300px;
     border: 2px solid transparent;
@@ -148,9 +150,9 @@ button {
 /* Estiliza o botão de redefinição quando o mouse está sobre ele, alterando as cores de fundo, texto e borda. */
 button:hover {
     background-color: rgba(30, 60, 114, 0.9);
-    background-color: whitesmoke;
-    color: #184063;
-    border: 2px solid #184063;
+    background-color: white;
+    color: #1e3c72;
+    border: 2px solid #1e3c72;
     transition: 0.4s;
 }
 
@@ -163,8 +165,8 @@ button:hover {
 {   position: absolute;
     display: inline-block;
     padding-top: 3px;
-    background-color: #184063;
-    color: whitesmoke;
+    background-color: #1e3c72;
+    color: white;
     height: auto;
     width: 10%;
     border: 2px solid transparent;
@@ -182,16 +184,16 @@ button:hover {
 /* Estiliza o botão que leva para redefinição quando o mouse está sobre ele, alterando as cores de fundo, texto e borda. */
     .RedefinirS a:hover{
         background-color: rgba(30, 60, 114, 0.9);
-        background-color: whitesmoke;
-        color: #184063;
-        border: 2px solid #184063;
+        background-color: white;
+        color: #1e3c72;
+        border: 2px solid #1e3c72;
         transition: 0.4s;
     }
 
 /* Estiliza o pop-up de sucesso, incluindo sua posição, preenchimento, cores, borda e opacidade. Ele também possui uma animação para aparecer. */
 .success-popup {
     display: none;
-    position: static;
+    position: flex;
     top: calc(62% - 60px);
     left: calc(44% - 150px);
     transform: -50%;
@@ -231,6 +233,76 @@ button:hover {
 
 i {
     position: absolute;
-    left: 42.5%;
-    padding-top: 7px;
+    margin-top: 7px;
+    margin-left: 10px;
   }
+
+  @media only screen and (min-width: 900px) and (max-width: 1200px){
+    .VoltarLogin{
+        margin-bottom: 30px;
+    }
+    .VoltarLogin a{
+        width: 110px;
+    }
+    .BlocoBranco-form{
+        height:75vh
+    }
+    .reset-header img{
+        margin-top: -110px;
+    }
+    .reset-header h1{
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 900px){
+    .VoltarLogin{
+        margin-bottom: 30px;
+    }
+    .VoltarLogin a{
+        width: 110px;
+    }
+    .BlocoBranco-form{
+        height:75vh;
+        width: 50vh;
+    }
+
+    @media only screen and (max-width: 450px){
+    .header{
+        margin-bottom: 30px
+    }
+    .header a{
+        width: 100px;
+        margin-left: 20px;
+    }
+    .form-header img{
+        margin-top: -110px;
+        width: 110%;
+        margin-left: -18px;
+    }
+    .login-form{
+        width: 90%;
+        height: 80vh;
+    }
+    .email input{
+        width: 330px;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    .w50 input{
+        width: 330px;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+    .confirm-w50 input{
+        width: 330px;
+        height: 35px;
+    }
+    .mostrar-senha input{
+        margin-left: -30px;
+        margin-bottom: 20px;
+    }
+    .button a{
+        width: 330px;
+    }
+    }}
