@@ -56,7 +56,7 @@ body {
 
 /* Estiliza o formulário de redefinição, incluindo seu tamanho, alinhamento e estilo de fundo. */
 .BlocoBranco-form {
-    width: 45%;
+    width: 50%;
     height: 85vh;
     display: flex;
     flex-direction: column;
@@ -85,9 +85,9 @@ form {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -135px;
+    margin-top: -128px;
     margin-bottom: auto;
-    width: 54.7%;
+    width: 49%;
     mix-blend-mode: multiply;
 }
 
@@ -128,18 +128,14 @@ input[type = "email"]:focus{
     padding: 8px 0 8px 35px;
 }
 
-
-
 /* Estiliza o botão de redefinição, incluindo tamanho, cores, estilo de borda, margem e estilo de fonte. */
 button {
     display: inline-block;
-    padding-top: 1px;
     background-color: #1e3c72;
     color: white;
-    height: 42px;
+    height: 47px;
     width: 300px;
     border: 2px solid transparent;
-    margin-bottom: -200px;
     border-radius: 5px;
     font-weight: bold;
     font-size: 20px;
@@ -163,24 +159,21 @@ button:hover {
 .RedefinirS{
     width: 100%;
     transition: 0.4s;
+    display: inline-block;
 }
 /*Botão para ir direto para redefinição de senha*/
-.RedefinirS a
-{   position: absolute;
+.RedefinirS a{
+    position: absolute;
     display: inline-block;
-    padding-top: 3px;
     background-color: #1e3c72;
     color: white;
     height: auto;
-    width: 10%;
     border: 2px solid transparent;
-    margin: 10px;
     border-radius: 5px;
-    font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     text-decoration: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 8%;
@@ -242,9 +235,10 @@ i {
   }
 
  /* Estilos de mídia query para tornar o formulário responsivo em dispositivos móveis */
-@media only screen and (max-width: 1280px) and (min-width: 901px) {
+@media only screen and (max-width: 1280px) and (min-width: 913px) {
     .BlocoBranco-form {
-        width: 45%;
+        width: 50%;
+        height: 85vh;
     }
 
     .reset-header img {
@@ -254,159 +248,272 @@ i {
     .VoltarLogin a {
         width: 100px;
         font-size: 12px;
-        height: 30px;
+        height: 25px;
+    }
+
+    .reset-header p {
+        font-size: 17px;
+        margin-bottom: 40px;
     }
 
     button {
-        width: 300px;
+        width: 200px;
         margin-bottom: -100px;
         font-size: 14px;
         height: 30px;
     }
 
     .RedefinirS a {
-        width: 10%;
+        width: 15%;
         font-size: 12px;
+        height: 3%;
+        margin-top: 6%;
+    }
+
+    .reset-group input {
+        width: 200px;
+        height: 28px;
     }
 
     .success-popup {
         top: calc(70% - 60px);
         left: calc(30% - 150px);
+        font-size: 13px;
+        padding: 15px;
+    }
+    .reset-header h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 912px) and (min-width: 901px) {
+    .BlocoBranco-form {
+        width: 70%;
+        height: 85vh;
+    }
+
+    .reset-header img {
+        width: 50%;
+    }
+
+    .VoltarLogin a {
+        width: 100px;
+        font-size: 12px;
+        height: 25px;
+    }
+
+    .reset-header p {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    button {
+        width: 200px;
+        margin-bottom: -100px;
+        font-size: 14px;
+        height: 30px;
+    }
+
+    .RedefinirS a {
+        width: 22%;
+        font-size: 12px;
+        height: 3%;
+        margin-top: 8%;
+    }
+
+    .reset-group input {
+        width: 200px;
+        height: 28px;
+    }
+
+    .success-popup {
+        top: calc(70% - 60px);
+        left: calc(30% - 150px);
+        font-size: 13px;
+        padding: 15px;
+    }
+    .reset-header h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
     }
 }
 
 @media only screen and (max-width: 900px) and (min-width: 601px) {
     .BlocoBranco-form {
-        width: 40%;
+        width: 71%;
+        height: 85vh;
     }
 
     .reset-header img {
-        width: 60%;
-    }
-
-    .reset-header h1 {
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 22px;
-    }
-
-    .reset-header p {
-        font-size: 14px;
-        margin-bottom: 40px;
-    }
-
-    .reset-group input {
-        width: 70%;
+        width: 50%;
     }
 
     .VoltarLogin a {
         width: 100px;
-        font-size: 14px;
+        font-size: 12px;
+        height: 25px;
+    }
+
+    .reset-header p {
+        font-size: 17px;
+        margin-bottom: 40px;
     }
 
     button {
-        width: 50%;
-        margin-bottom: -150px;
-        font-size: 16px;
+        width: 200px;
+        margin-bottom: -100px;
+        font-size: 14px;
+        height: 30px;
     }
 
     .RedefinirS a {
-        width: 50%;
-        font-size: 14px;
+        width: 22%;
+        font-size: 12px;
+        height: 3%;
+        margin-top: 8%;
+    }
+
+    .reset-group input {
+        width: 200px;
+        height: 28px;
     }
 
     .success-popup {
-        top: calc(75% - 60px);
-        left: calc(20% - 150px);
+        top: calc(70% - 60px);
+        left: calc(30% - 150px);
+        font-size: 13px;
+        padding: 15px;
     }
+    .reset-header h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    i {
+        position: absolute;
+        margin-top: 6px;
+        margin-left: 10px;
+      }
 }
 
 @media only screen and (max-width: 600px) and (min-width: 451px) {
     .BlocoBranco-form {
-        width: 60%;
+        width: 80%;
+        height: 85vh;
     }
 
     .reset-header img {
-        width: 70%;
-    }
-
-    .reset-header h1 {
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .reset-header p {
-        font-size: 14px;
-        margin-bottom: 35px;
-    }
-
-    .reset-group input {
-        width: 80%;
+        width: 75%;
     }
 
     .VoltarLogin a {
         width: 100px;
         font-size: 12px;
+        height: 25px;
+    }
+
+    .reset-header p {
+        font-size: 15px;
+        margin-bottom: 36px;
     }
 
     button {
-        width: 60%;
-        margin-bottom: -200px;
-        font-size: 14px;
+        width: 150px;
+        margin-bottom: -100px;
+        font-size: 13px;
+        height: 27px;
     }
 
     .RedefinirS a {
-        width: 60%;
+        width: 28%;
         font-size: 12px;
+        height: 3%;
+        margin-top: 13%;
+    }
+
+    .reset-group input {
+        width: 150px;
+        height: 23px;
     }
 
     .success-popup {
-        top: calc(80% - 60px);
-        left: calc(10% - 150px);
+        top: calc(70% - 60px);
+        left: calc(30% - 150px);
+        font-size: 11px;
+        padding: 15px;
     }
+    .reset-header h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    i {
+        position: absolute;
+        margin-top: 4px;
+        margin-left: 10px;
+      }
 }
 
 @media only screen and (max-width: 450px) {
     .BlocoBranco-form {
-        width: 70%;
+        width: 90%;
+        height: 85vh;
     }
 
     .reset-header img {
         width: 80%;
     }
 
-    .reset-header h1 {
-        margin-left: 10px;
-        margin-right: 10px;
+    .VoltarLogin a {
+        width: 100px;
+        font-size: 12px;
+        height: 25px;
     }
 
     .reset-header p {
-        font-size: 12px;
-        margin-bottom: 30px;
-    }
-
-    .reset-group input {
-        width: 90%;
-    }
-
-    .VoltarLogin a {
-        width: 100px;
-        font-size: 10px;
+        font-size: 15px;
+        margin-bottom: 36px;
     }
 
     button {
-        width: 70%;
-        margin-bottom: -250px;
-        font-size: 12px;
+        width: 150px;
+        margin-bottom: -100px;
+        font-size: 13px;
+        height: 27px;
     }
 
     .RedefinirS a {
-        width: 70%;
-        font-size: 10px;
+        width: 39%;
+        font-size: 12px;
+        height: 4%;
+        margin-top: 18%;
+    }
+
+    .reset-group input {
+        width: 150px;
+        height: 23px;
     }
 
     .success-popup {
-        top: calc(85% - 60px);
-        left: calc(5% - 150px);
+        top: calc(70% - 60px);
+        left: calc(30% - 150px);
+        font-size: 11px;
+        padding: 15px;
     }
+    .reset-header h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    i {
+        position: absolute;
+        margin-top: 4px;
+        margin-left: 10px;
+      }
 }
