@@ -242,7 +242,7 @@ i {
   }
 
  /* Estilos de mídia query para tornar o formulário responsivo em dispositivos móveis */
-@media only screen and (max-width: 1200px) and (min-width: 901px) {
+@media only screen and (max-width: 1280px) and (min-width: 901px) {
     .BlocoBranco-form {
         width: 45%;
     }
@@ -252,14 +252,16 @@ i {
     }
 
     .VoltarLogin a {
-        width: 10%;
+        width: 100px;
         font-size: 12px;
+        height: 30px;
     }
 
     button {
-        width: 100%;
+        width: 300px;
         margin-bottom: -100px;
         font-size: 14px;
+        height: 30px;
     }
 
     .RedefinirS a {
@@ -285,10 +287,11 @@ i {
     .reset-header h1 {
         margin-left: 20px;
         margin-right: 20px;
+        font-size: 22px;
     }
 
     .reset-header p {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 40px;
     }
 
@@ -297,7 +300,7 @@ i {
     }
 
     .VoltarLogin a {
-        width: 50%;
+        width: 100px;
         font-size: 14px;
     }
 
@@ -342,7 +345,7 @@ i {
     }
 
     .VoltarLogin a {
-        width: 60%;
+        width: 100px;
         font-size: 12px;
     }
 
@@ -387,7 +390,7 @@ i {
     }
 
     .VoltarLogin a {
-        width: 70%;
+        width: 100px;
         font-size: 10px;
     }
 
