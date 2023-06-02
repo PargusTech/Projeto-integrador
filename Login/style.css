@@ -13,7 +13,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #184063;
+  background-color: #1e3c72;
 }
 
 .pargus {
@@ -85,7 +85,7 @@ input[type="text"], input[type="password"] {
 }
 
 button[type="submit"] {
-  background: #0044ff;
+  background: #184063;
   color: white;
   border-radius: 30px;
   width: 100%;
