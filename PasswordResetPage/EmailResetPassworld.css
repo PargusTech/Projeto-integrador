@@ -24,6 +24,8 @@ body {
     height: 50px;
     width: 100%;
     transition: 0.4s;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Estiliza os links dentro do cabeçalho. */
@@ -175,6 +177,7 @@ button:hover {
     text-decoration: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 8%;
+    width: 12%;
 }
 /* Estiliza o botão que leva para redefinição quando o mouse está sobre ele, alterando as cores de fundo, texto e borda. */
     .RedefinirS a:hover{
