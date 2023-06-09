@@ -93,6 +93,7 @@ body {
     border-radius: 5px;
     outline: none;
     padding: 8px 0 8px 35px;
+    transition: 0.4s;
 }
 .email input:hover, .w50 input:hover, .confirm-w50 input:hover{
     background-color: lightgrey;
@@ -114,6 +115,7 @@ input[type = "email"]:focus, input[type = "password"]:focus{
     border-radius: 5px;
     outline: none;
     padding: 8px 0 8px 35px;
+    transition: 0.4s;
 }
 .confirm-w50 input{
     height: 30px;
@@ -127,6 +129,7 @@ input[type = "email"]:focus, input[type = "password"]:focus{
     display: flex;
     outline: none;
     padding: 8px 0 8px 35px;
+    transition: 0.4s;
 }
 .mostrar-senha input{
     height: 20px;
