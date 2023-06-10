@@ -108,12 +108,9 @@ nav {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   height: 100vh;
   width: 100vw;
-
 }
 
 .dashboard-title {
@@ -121,10 +118,9 @@ nav {
   background-color: var(--main-color);
   width: 100vw;
   height: 7vh;
-  text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   font-size: 3rem;
 }
 .dashboard-title-span{
@@ -132,7 +128,15 @@ nav {
   font-weight: 600;
   color: var(--text-color);
 }
-
+.img-container{
+  margin-top: 80px;
+  margin-left: 250px;
+  position: absolute;
+}
+.img-container img {
+  height: 550px;
+  width: 1000px;
+}
 @media screen and (max-width: 400px) {
   .dashboard-title {
     display: flex;
