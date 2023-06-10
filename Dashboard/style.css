@@ -129,12 +129,12 @@ nav {
   color: var(--text-color);
 }
 .img-container{
-  margin-top: 50px;
+  margin-top: 60px;
   margin-left: 250px;
   position: absolute;
 }
 .img-container img {
-  height: 590px;
+  height: 580px;
   width: 1000px;
 }
 @media screen and (max-width: 400px) {
