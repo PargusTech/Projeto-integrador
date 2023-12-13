@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="Login.css">
+  <!-- <link rel = "icon" href = "pargus_tech.jpg"> -->
+  <script src="https://kit.fontawesome.com/42ca70029b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="header">
+    <!-- <i class="fa-solid fa-house" style="color: #1e3c72;"></i> -->
+    <a href="/CreateAccountPage/create_account.html" id="Btn-login">Criar conta</a>
+  </header>
+
+  <div class="login-form">
+    <div class="form-header">
+      <img alt="Logo" src="pargus.png" id="logo">
+      <h1>login</h1>
+    </div>
+
+    <div class="email">
+      <i class="fas fa-envelope iEmail"></i>
+      <input type="email" id="email" name="email" placeholder="E-mail" autocomplete="off" required>
+    </div>
+
+    <div class="w50">
+      <i class="fas fa-lock iPassword"></i>
+      <input type="password" id="password" name="password" placeholder="Senha" autocomplete="off" required>
+    </div>
+
+    <div class="buttons">
+      <div class="mostrar-senha">
+        <input type="checkbox" id="mostrar-senha" name="mostrar-senha">
+        <label for="mostrar-senha">Lembrar-me</label>
+      </div>
+      
+      <div class="redefinir-senha">
+        <a href="/PasswordResetPage/EmailResetPassword.html">Redefinir Senha</a>
+      </div>
+    </div>
+   
+    <div class="button">
+      <a href="/DashboardPage/index.html">Login</a>
+    </div>
+</body>
+
+</html>

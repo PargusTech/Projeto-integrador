@@ -1,0 +1,520 @@
+/* Importa a fonte Montserrat com peso de 700 do Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Define as propriedades de margem, preenchimento e caixa de dimensionamento como border-box para todos os elementos HTML. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Define o plano de fundo do corpo do documento com uma imagem de gradiente e centraliza verticalmente os elementos. */
+body {
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Define as propriedades do cabeçalho, incluindo o plano de fundo e a transição. */
+.VoltarLogin {
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%);
+    height: 50px;
+    width: 100%;
+    transition: 0.4s;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Estiliza os links dentro do cabeçalho. */
+.VoltarLogin a {
+    display: inline-block;
+    padding-top: 3px;
+    background-color: white;
+    color: #1e3c72;
+    height: 30px;
+    width: 8%;
+    border: 2px solid transparent;
+    margin: 10px;   
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    box-shadow: 0 0 10px 0 darkgrey;
+}
+
+.VoltarLogin a:hover {
+    background-color: #1e3c72;
+    color: white;
+    border: 2px solid white;
+    transition: 0.4s;
+}
+
+
+/* Estiliza o formulário de redefinição, incluindo seu tamanho, alinhamento e estilo de fundo. */
+.BlocoBranco-form {
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,1);
+    padding: 3rem 1rem;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    box-shadow: 0 0 10px 0 darkgrey;
+}
+
+/* Estiliza o formulário e seu conteúdo, alinhando-os verticalmente e centralmente. */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estiliza a imagem do cabeçalho de redefinição. */
+.reset-header img {
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -128px;
+    margin-bottom: auto;
+    width: 49%;
+    mix-blend-mode: multiply;
+}
+
+/* Estiliza o título do cabeçalho de redefinição, incluindo alinhamento, estilo de fonte e borda inferior. */
+.reset-header h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* Estiliza o parágrafo do cabeçalho de redefinição, incluindo alinhamento, tamanho da fonte e estilo de fonte. */
+.reset-header p {
+    font-weight: normal;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* Estiliza os campos de entrada do grupo de redefinição, incluindo altura, largura, estilo de borda, cor do texto e cor de fundo. */
+.reset-group input { 
+    height: 30px;
+    width: 300px;
+    border: 2px solid transparent;
+    color: black;
+    background-color: gainsboro;
+    font-weight: bold;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    outline: none;
+    padding: 8px 0 8px 35px;
+}
+
+/* Estiliza o botão de redefinição, incluindo tamanho, cores, estilo de borda, margem e estilo de fonte. */
+button {
+    display: inline-block;
+    background-color: #1e3c72;
+    color: white;
+    height: 47px;
+    width: 300px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Estiliza o botão de redefinição quando o mouse está sobre ele, alterando as cores de fundo, texto e borda. */
+button:hover {
+    background-color: rgba(30, 60, 114, 0.9);
+    background-color: white;
+    color: #1e3c72;
+    border: 2px solid #1e3c72;
+    transition: 0.4s;
+}
+
+.RedefinirS{
+    width: 100%;
+    transition: 0.4s;
+    display: inline-block;
+}
+/*Botão para ir direto para redefinição de senha*/
+.RedefinirS a{
+    position: absolute;
+    display: inline-block;
+    background-color: #1e3c72;
+    color: white;
+    height: auto;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 8%;
+    width: 12%;
+}
+/* Estiliza o botão que leva para redefinição quando o mouse está sobre ele, alterando as cores de fundo, texto e borda. */
+    .RedefinirS a:hover{
+        background-color: rgba(30, 60, 114, 0.9);
+        background-color: white;
+        color: #1e3c72;
+        border: 2px solid #1e3c72;
+        transition: 0.4s;
+    }
+
+/* Estiliza o pop-up de sucesso, incluindo sua posição, preenchimento, cores, borda e opacidade. Ele também possui uma animação para aparecer. */
+.success-popup {
+    display: none;
+    position: flex;
+    top: calc(62% - 60px);
+    left: calc(44% - 150px);
+    transform: -50%;
+    padding: 20px;
+    background-color: hsl(157, 100%, 49%);
+    color: #2E8B57;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+    opacity: 0;
+    animation: popupAppear 0.4s ease-in-out forwards;
+    height: auto;
+    box-shadow: 0 0 20px 0 hsla(157, 100%, 49%, 0.575);
+}
+
+/* Animação para o pop-up de sucesso aparecer. */
+@keyframes popupAppear {  
+    0% {
+        opacity: 0;
+        transform: translateY(-50%) scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-50%) scale(0.8);
+    }
+}
+
+/* Classe adicional para exibir o pop-up de sucesso. */
+.success-popup.show {    
+    display: block;
+}
+
+/* Estiliza um botão desabilitado, reduzindo sua opacidade e alterando o cursor. */
+.btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+i {
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 10px;
+  }
+
+ /* Estilos de mídia query para tornar o formulário responsivo em dispositivos móveis */
+@media only screen and (max-width: 1280px) and (min-width: 913px) {
+    .BlocoBranco-form {
+        width: 50%;
+        height: 85vh;
+    }
+
+    .reset-header img {
+        width: 50%;
+    }
+
+    .VoltarLogin a {
+        width: 100px;
+        font-size: 12px;
+        height: 25px;
+    }
+
+    .reset-header p {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    button {
+        width: 200px;
+        margin-bottom: -100px;
+        font-size: 14px;
+        height: 30px;
+    }
+
+    .RedefinirS a {
+        width: 15%;
+        font-size: 12px;
+        height: 3%;
+        margin-top: 6%;
+    }
+
+    .reset-group input {
+        width: 200px;
+        height: 28px;
+    }
+
+    .success-popup {
+        top: calc(70% - 60px);
+        left: calc(30% - 150px);
+        font-size: 13px;
+        padding: 15px;
+    }
+    .reset-header h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 912px) and (min-width: 901px) {
+    .BlocoBranco-form {
+        width: 70%;
+        height: 85vh;
+    }
+
+    .reset-header img {
+        width: 50%;
+    }
+
+    .VoltarLogin a {
+        width: 100px;
+        font-size: 12px;
+        height: 25px;
+    }
+
+    .reset-header p {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    button {
+        width: 200px;
+        margin-bottom: -100px;
+        font-size: 14px;
+        height: 30px;
+    }
+
+    .RedefinirS a {
+        width: 22%;
+        font-size: 12px;
+        height: 3%;
+        margin-top: 8%;
+    }
+
+    .reset-group input {
+        width: 200px;
+        height: 28px;
+    }
+
+    .success-popup {
+        top: calc(70% - 60px);
+        left: calc(30% - 150px);
+        font-size: 13px;
+        padding: 15px;
+    }
+    .reset-header h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+    .BlocoBranco-form {
+        width: 71%;
+        height: 85vh;
+    }
+
+    .reset-header img {
+        width: 50%;
+    }
+
+    .VoltarLogin a {
+        width: 100px;
+        font-size: 12px;
+        height: 25px;
+    }
+
+    .reset-header p {
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    button {
+        width: 200px;
+        margin-bottom: -100px;
+        font-size: 14px;
+        height: 30px;
+    }
+
+    .RedefinirS a {
+        width: 22%;
+        font-size: 12px;
+        height: 3%;
+        margin-top: 8%;
+    }
+
+    .reset-group input {
+        width: 200px;
+        height: 28px;
+    }
+
+    .success-popup {
+        top: calc(70% - 60px);
+        left: calc(30% - 150px);
+        font-size: 13px;
+        padding: 15px;
+    }
+    .reset-header h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 20px;
+    }
+
+    i {
+        position: absolute;
+        margin-top: 6px;
+        margin-left: 10px;
+      }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 451px) {
+    .BlocoBranco-form {
+        width: 80%;
+        height: 85vh;
+    }
+
+    .reset-header img {
+        width: 75%;
+    }
+
+    .VoltarLogin a {
+        width: 100px;
+        font-size: 12px;
+        height: 25px;
+    }
+
+    .reset-header p {
+        font-size: 15px;
+        margin-bottom: 36px;
+    }
+
+    button {
+        width: 150px;
+        margin-bottom: -100px;
+        font-size: 13px;
+        height: 27px;
+    }
+
+    .RedefinirS a {
+        width: 28%;
+        font-size: 12px;
+        height: 3%;
+        margin-top: 13%;
+    }
+
+    .reset-group input {
+        width: 150px;
+        height: 23px;
+    }
+
+    .success-popup {
+        top: calc(70% - 60px);
+        left: calc(30% - 150px);
+        font-size: 11px;
+        padding: 15px;
+    }
+    .reset-header h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    i {
+        position: absolute;
+        margin-top: 4px;
+        margin-left: 10px;
+      }
+}
+
+@media only screen and (max-width: 450px) {
+    .BlocoBranco-form {
+        width: 90%;
+        height: 85vh;
+    }
+
+    .reset-header img {
+        width: 80%;
+    }
+
+    .VoltarLogin a {
+        width: 100px;
+        font-size: 12px;
+        height: 25px;
+    }
+
+    .reset-header p {
+        font-size: 15px;
+        margin-bottom: 36px;
+    }
+
+    button {
+        width: 150px;
+        margin-bottom: -100px;
+        font-size: 13px;
+        height: 27px;
+    }
+
+    .RedefinirS a {
+        width: 39%;
+        font-size: 12px;
+        height: 4%;
+        margin-top: 18%;
+    }
+
+    .reset-group input {
+        width: 150px;
+        height: 23px;
+    }
+
+    .success-popup {
+        top: calc(70% - 60px);
+        left: calc(30% - 150px);
+        font-size: 11px;
+        padding: 15px;
+    }
+    .reset-header h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    i {
+        position: absolute;
+        margin-top: 4px;
+        margin-left: 10px;
+      }
+}
