@@ -1,2 +1,2 @@
 # Projeto-integrador
-Repositorio do projeto de alta fidelidade da fabrica PargusTech da faculdade Nova Roma Caruaru
+Repositório do Projeto Pertencente a Fábrica Pargus Tech da Faculdade Nova Roma
