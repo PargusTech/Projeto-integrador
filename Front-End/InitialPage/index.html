@@ -10,5 +10,55 @@
 </head>
 <body>
   
+  <header>
+    <div class="logo">
+      <span>Pargus Tech</span>
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a class="items-menu" href="#inicio">Início</a></li>
+        <li><a class="items-menu" href="#sobre-nos">Sobre Nós</a></li>
+        <span class="items-menu" id="form-contact">Contato</span>
+        <li><a class="items-menu" href="#">Login</a></li>
+        <a href=""><button id="btn-signUp">Criar Conta</button></a>
+      </ul>
+    </nav>
+  </header>
+
+  <div class = "modal" id="modal">
+    <form action="#">
+      <div class="title-form">
+        <h2>Contate-nos</h2>
+      </div>
+      
+      <div class="subtitle-form">
+        <p>Dúvidas, problemas ou sugestões? Estamos aqui para ouvir você! Sua opinião é fundamental para nós, então sinta-se à vontade para compartilhar. Como podemos ajudar?</p>
+      </div>
+
+      <div class="input-field">
+        <input type="text" placeholder = "Nome"  autocomplete="off">
+      </div>
+
+      <div class="input-field">
+        <input type="email" placeholder = "Email"  autocomplete="off">
+      </div>
+
+      <div class="input-field">
+        <input type="text" placeholder = "Assunto"  autocomplete="off">
+      </div>
+
+      <div class="input-field">
+        <textarea placeholder="Mensagem"></textarea>
+      </div>
+
+      <button id="btn-form-contact">Enviar</button>
+
+      <button class="close-modal">X</button>
+    </form>
+
+    
+  </div>
+
 </body>
 </html>
