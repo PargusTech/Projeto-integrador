@@ -425,6 +425,10 @@ form #btn-form-contact:hover {
   height: 100vh;
   background: var(--tertiary-color);
   padding: 0 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-flex {
@@ -437,15 +441,15 @@ form #btn-form-contact:hover {
   text-align: center;
   font-weight: 600;
   font-size: 1.5rem;
-  padding-top: 1rem;
 }
 
 .container-text {
   width: 50%;
+  margin-left: 3rem;
 }
 
 .text-about-us {
-  width: 70%;
+  width: 75%;
 }
 
 .text-about-us p {
