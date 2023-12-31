@@ -9,12 +9,16 @@ function view_modal(modal){
 }
 
 const btn_contact = document.querySelector("#form-contact")
+const btn_contact2 = document.querySelector("#btn-contact2")
 const btn_close_modal = document.querySelector(".close-modal")
 
 btn_contact.addEventListener('click', function(){
   view_modal(".modal")
 })
 
+btn_contact2.addEventListener('click', function(){
+  view_modal(".modal")
+})
 const btn_password = document.querySelector("#btn-view-password")
 
 btn_password.addEventListener('click', function(){
