@@ -264,6 +264,10 @@ form .close-modal {
   transition: .3s ease-in-out;
 }
 
+.input-group input:focus-visible ~ i{
+  color: var(--primary-color);
+}
+
 .input-group i {
   font-size: 1.2rem;
   position: absolute;
@@ -456,6 +460,7 @@ form #btn-form-contact:hover {
 .text-about-us p {
   text-align: justify;
   font-size: 1.2rem;
+  line-height: 2.5rem;
 }
 
 .text-about-us a {
