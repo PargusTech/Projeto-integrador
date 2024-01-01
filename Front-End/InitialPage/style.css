@@ -515,36 +515,66 @@ form #btn-form-contact:hover {
   font-size: 1.8rem;
 }
 
-.navbar-footer a, li {
+.navbar-footer a {
   text-decoration: none;
   color: var(--quaternary-color);
   font-weight: 300;
   cursor: pointer;
+  transition: .3s ease-in-out;
+  position: relative;
+  padding: 0 .1rem;
 }
+
+.navbar-footer a:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: var(--quaternary-color);
+  transform: scaleX(0);
+  transition: .3s ease-in-out;
+  transform-origin: left;
+
+}
+
+.navbar-footer a:hover::after {
+  transform: scaleX(1);
+}
+
 
 .container-social-media {
   display: flex;
-  gap: 1.5rem;
+  gap: .5rem;
 }
 
 .social-media {
   border-radius: 50%;
-  border: 1px solid var(--quaternary-color);
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
+
 
 .social-media i {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  color: var(--quaternary-color);
+  transition: .3s ease-in-out;
+}
+
+.social-media i:hover {
+  color: var(--secondary-color);
+}
+
+.copyright p {
   color: var(--quaternary-color);
 }
 
-.copyright p{
-  color: var(--quaternary-color);
-}
 @keyframes modal {
   from {
     opacity: 0;
