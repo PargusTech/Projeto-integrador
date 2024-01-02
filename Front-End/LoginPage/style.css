@@ -182,7 +182,7 @@ form {
   transform-origin: left;
   transition: .3s ease-in-out;
 }
-
+ 
 .input-field input:focus~.underline::after {
   transform: scaleX(1);
 }

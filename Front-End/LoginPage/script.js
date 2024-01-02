@@ -1,4 +1,4 @@
-const btn_password = document.querySelector("#btn-view-password")
+const btn_password = document.querySelector("#btn-view-password") 
 
 btn_password.addEventListener('click', function(){
   let password = document.querySelector("#input-password")
