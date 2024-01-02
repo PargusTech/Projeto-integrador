@@ -267,6 +267,7 @@ form {
     top: 9px;
 }
 
+
 .google-login button:hover {
     background-color: var(--tertiary-color);
 }

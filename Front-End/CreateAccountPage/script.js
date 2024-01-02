@@ -1,6 +1,7 @@
 const btn_view_password = document.querySelector("#btn-view-password")
 
 btn_view_password.addEventListener('click', function(){
+    
     const input_confirm_password = document.querySelector("#input-confirm-password")
     if(input_confirm_password.type === "password"){
         input_confirm_password.type = "text"
