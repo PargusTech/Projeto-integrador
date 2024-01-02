@@ -201,7 +201,7 @@ form .close-modal {
 
 .section {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh + 1.75rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -233,7 +233,7 @@ form .close-modal {
   outline: none;
   color: var(--primary-color);
   font-weight: 300;
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 .form-container .input-group input::placeholder {
@@ -264,14 +264,18 @@ form .close-modal {
   transition: .3s ease-in-out;
 }
 
-.input-group input:focus-visible ~ i {
+.input-group input:focus-visible~i {
   color: var(--primary-color);
 }
+
+.input-group input:focus-visible::placeholder{
+  color: var(--primary-color);
+} 
 
 .input-group i {
   font-size: 1.2rem;
   position: absolute;
-  right: 0;
+  right: 3px;
   top: 10px;
   color: var(--quaternary-color);
   cursor: pointer;
@@ -352,7 +356,6 @@ form .close-modal {
   font-size: 1rem;
   cursor: pointer;
   transition: .3s ease-in-out;
-  margin-bottom: 1rem;
   text-align: left;
 }
 
@@ -401,7 +404,7 @@ form .close-modal {
   width: 100%;
   border-radius: 50px;
   object-fit: cover;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .items-menu:hover::after {
@@ -484,7 +487,7 @@ form #btn-form-contact:hover {
   width: 100%;
   height: 100%;
   border-radius: 50px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   object-fit: cover;
 }
 
