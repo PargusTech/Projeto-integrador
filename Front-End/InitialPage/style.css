@@ -264,7 +264,7 @@ form .close-modal {
   transition: .3s ease-in-out;
 }
 
-.input-group input:focus-visible ~ i{
+.input-group input:focus-visible ~ i {
   color: var(--primary-color);
 }
 
@@ -441,7 +441,7 @@ form #btn-form-contact:hover {
   justify-content: center;
 }
 
-.title-section h2{
+.title-section h2 {
   text-align: center;
   font-weight: 600;
   font-size: 1.8rem;
