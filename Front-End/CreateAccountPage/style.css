@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #FFFFFF;
+    --tertiary-color: #F7F7F7;
+    --quaternary-color: #A9A9A9;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    background-color: var(--primary-color);
+    align-items: center;
+    padding: .6rem 1.75rem;
+    position: fixed;
+}
+
+.logo h2 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    gap: 2.2rem;
+    align-items: center;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.items-menu {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 300;
+    position: relative;
+    padding: 0 .1rem;
+    cursor: pointer;
+}
+
+.menu #btn-signUp {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.items-menu::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: var(--secondary-color);
+    transform: scaleX(0);
+    transition: .3s ease-in-out;
+    transform-origin: left;
+}
+
+.menu #btn-signUp:hover {
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.items-menu:hover::after {
+    transform: scaleX(1);
+}
+
+.form-container {
+    width: 100vw;
+    height: calc(100vh + 1.75rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: .5rem;
+    width: 400px;
+}
+
+.header-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .8rem;
+}
+
+.title h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 2.5rem;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.input-field {
+    width: 100%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.input-field input {
+    width: 100%;
+    padding: .8rem .3rem;
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.input-field input::placeholder {
+    color: var(--quaternary-color);
+    font-weight: 300;
+}
+
+.input-field input:focus-visible::placeholder {
+    color: var(--primary-color);
+}
+
+.underline {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--quaternary-color);
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .3s ease-in-out;
+}
+
+.input-field input:focus~.underline::after {
+    transform: scaleX(1);
+}
+
+.input-field input:focus-visible~i {
+    color: var(--primary-color);
+}
+
+.input-field i {
+    font-size: 1.2rem;
+    position: absolute;
+    right: 3px;
+    top: 10px;
+    color: var(--quaternary-color);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.input-field i:hover {
+    color: var(--primary-color);
+}
+
+.underline a {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #0000FF;
+    opacity: .6;
+    text-decoration: none;
+}
+
+.underline a:hover {
+    text-decoration: underline;
+}
+
+.btn-create-account {
+    width: 100%;
+}
+
+.btn-create-account button {
+    width: 100%;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: .6rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn-create-account button:hover {
+    opacity: .8;
+}
+
+.google-login {
+    width: 100%;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.google-login button {
+    width: 100%;
+    border: 1px solid var(--quaternary-color);
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+    padding: .6rem;
+    padding-left: 5rem;
+    border-radius: 50px;
+    font-weight: 300;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    text-align: left;
+}
+
+.google-login img {
+    width: 30px;
+    position: absolute;
+    left: 20px;
+    top: 9px;
+}
+
+.google-login button:hover {
+    background-color: var(--tertiary-color);
+}
