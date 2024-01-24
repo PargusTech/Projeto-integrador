@@ -205,18 +205,6 @@ form {
     color: var(--primary-color);
 }
 
-.underline a {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #0000FF;
-    opacity: .6;
-    text-decoration: none;
-}
-
-.underline a:hover {
-    text-decoration: underline;
-}
-
 .btn-create-account {
     width: 100%;
 }
@@ -237,37 +225,4 @@ form {
 
 .btn-create-account button:hover {
     opacity: .8;
-}
-
-.google-login {
-    width: 100%;
-    margin-top: 1rem;
-    position: relative;
-}
-
-.google-login button {
-    width: 100%;
-    border: 1px solid var(--quaternary-color);
-    background-color: var(--secondary-color);
-    color: var(--quaternary-color);
-    padding: .6rem;
-    padding-left: 5rem;
-    border-radius: 50px;
-    font-weight: 300;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: .3s ease-in-out;
-    text-align: left;
-}
-
-.google-login img {
-    width: 30px;
-    position: absolute;
-    left: 20px;
-    top: 9px;
-}
-
-
-.google-login button:hover {
-    background-color: var(--tertiary-color);
 }

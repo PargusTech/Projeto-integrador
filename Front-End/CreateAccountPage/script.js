@@ -1,4 +1,4 @@
-const btn_view_password = document.querySelector("#btn-view-password")
+let btn_view_password = document.querySelector("#btn-view-password")
 
 btn_view_password.addEventListener('click', function(){
     

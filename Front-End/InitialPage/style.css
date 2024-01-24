@@ -9,7 +9,6 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
   scroll-padding-top: 4.3rem;
 }
 
@@ -36,6 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 header {
@@ -46,6 +46,9 @@ header {
   align-items: center;
   padding: .6rem 1.75rem;
   position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
   z-index: 1;
 }
 
@@ -55,13 +58,19 @@ header {
   font-weight: 600;
 }
 
-.menu {
+nav {
   display: flex;
   gap: 2.2rem;
   align-items: center;
 }
 
-.menu li {
+.menu-header {
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+.menu-header li {
   list-style-type: none;
 }
 
@@ -74,7 +83,7 @@ header {
   cursor: pointer;
 }
 
-.menu #btn-signUp {
+#btn-signUp {
   padding: 0.5rem 1rem;
   border: 2px solid var(--primary-color);
   background-color: var(--secondary-color);
@@ -218,6 +227,7 @@ form .close-modal {
   font-weight: 600;
   margin-bottom: 2rem;
   padding: 2rem 0;
+  text-wrap: balance;
 }
 
 .form-container .input-group {
@@ -243,12 +253,12 @@ form .close-modal {
 
 .underline {
   content: "";
-  position: absolute;
-  bottom: 5px;
-  left: 0;
   width: 100%;
+  position: relative;
   height: 1px;
   background: var(--quaternary-color);
+  display: flex;
+  justify-content: space-between;
 }
 
 .underline::after {
@@ -268,9 +278,9 @@ form .close-modal {
   color: var(--primary-color);
 }
 
-.input-group input:focus-visible::placeholder{
+.input-group input:focus-visible::placeholder {
   color: var(--primary-color);
-} 
+}
 
 .input-group i {
   font-size: 1.2rem;
@@ -292,6 +302,7 @@ form .close-modal {
   color: #0000FF;
   opacity: .6;
   text-decoration: none;
+  margin-top: 5px;
 }
 
 .btns {
@@ -302,8 +313,9 @@ form .close-modal {
   position: relative;
 }
 
-.btns .btn-login button {
+.btns .btn-login a {
   width: 100%;
+  display: block;
   border: none;
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -315,6 +327,8 @@ form .close-modal {
   cursor: pointer;
   transition: .3s ease-in-out;
   margin-bottom: 1rem;
+  text-decoration: none;
+  text-align: center;
 }
 
 .btns span {
@@ -344,7 +358,7 @@ form .close-modal {
   width: 43%;
 }
 
-.btns .btn-google button {
+.btns .btn-google a {
   width: 100%;
   border: 1px solid var(--quaternary-color);
   background-color: var(--secondary-color);
@@ -357,6 +371,8 @@ form .close-modal {
   cursor: pointer;
   transition: .3s ease-in-out;
   text-align: left;
+  display: block;
+  text-decoration: none;
 }
 
 .btn-google img {
@@ -366,11 +382,11 @@ form .close-modal {
   top: 115px;
 }
 
-.btns .btn-google button:hover {
+.btns .btn-google a:hover {
   background-color: var(--tertiary-color);
 }
 
-.btns .btn-login button:hover {
+.btns .btn-login a:hover {
   opacity: .8;
 }
 
@@ -411,7 +427,7 @@ form .close-modal {
   transform: scaleX(1);
 }
 
-.menu #btn-signUp:hover {
+#btn-signUp:hover {
   background-color: var(--primary-color);
   border-color: var(--secondary-color);
   color: var(--secondary-color);
@@ -584,6 +600,25 @@ form #btn-form-contact:hover {
   color: var(--quaternary-color);
 }
 
+.hamburguer-menu {
+  border: none;
+  background: none;
+  border-top: 3px solid var(--secondary-color);
+  cursor: pointer;
+  display: none;
+}
+
+.hamburguer-menu::before, .hamburguer-menu::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  background: var(--secondary-color);
+  margin-top: 7px;
+  height: 3px;
+  transition: .3s ease-in-out;
+  position: relative;
+}
+
 @keyframes modal {
   from {
     opacity: 0;
@@ -593,5 +628,92 @@ form #btn-form-contact:hover {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes menu-mobile-open {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media(320px <= width <= 768px) {
+
+  .hamburguer-menu {
+    display: block;
+    z-index: 1;
+  }
+
+  .menu-header {
+    position: fixed;
+    width: 100vw;
+    height: 40vh;
+    top: 0;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    list-style: none;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    display: none;
+  }
+
+  .navbar-header.active .menu-header {
+    display: flex;
+    animation: menu-mobile-open .3s;
+  }
+
+  .navbar-header.active .hamburguer-menu {
+    border-top-color: transparent;
+  }
+
+  .navbar-header.active .hamburguer-menu::before {
+    transform: rotate(135deg);
+  }
+
+  .navbar-header.active .hamburguer-menu::after {
+    transform: rotate(-135deg);
+    top: -9px;
+  }
+
+  #img-container {
+    display: none;
+  }
+
+  .container-flex {
+    flex-direction: column-reverse;
+  }
+
+  #btn-signUp {
+    white-space: nowrap;
+  }
+
+  .modal form{
+    width: 60%;
+  }
+
+  .section .form-container{
+    width: 100%;
+  }
+
+  .form-container form, h1{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header{
+    position: relative;
   }
 }

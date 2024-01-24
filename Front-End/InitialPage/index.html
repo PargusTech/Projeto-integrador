@@ -16,14 +16,16 @@
       <h2>Pargus Tech</h2>
     </div>
 
-    <nav>
-      <ul class="menu">
+    <nav class="navbar-header">
+      <ul class="menu-header">
         <li><a class="items-menu" href="#inicio">Início</a></li>
         <li><a class="items-menu" href="#sobre-nos">Sobre Nós</a></li>
         <span class="items-menu" id="form-contact">Contato</span>
         <li><a class="items-menu" href="../LoginPage/index.html">Login</a></li>
-        <a href="../CreateAccountPage/index.html"><button id="btn-signUp">Criar Conta</button></a>
       </ul>
+      
+      <a href="../CreateAccountPage/index.html"><button id="btn-signUp">Criar Conta</button></a>
+      <button class="hamburguer-menu"></button>
     </nav>
   </header>
 
@@ -61,39 +63,41 @@
 
   <section class="section" id="inicio">
     <div class="form-container">
-      <form action="#">
+      <form action="#" id="form-login">
         <h1>Seja bem vindo! Comece a aproveitar nosso serviço agora</h1>
 
         <div class="input-group">
-          <input type="email" placeholder="Email">
-          <div class="underline"></div>
+          <input type="text" placeholder="Email" id="input-email" autocomplete="off">
+          <div class="underline">
+             <p class="error"></p>
+          </div>
         </div>
 
         <div class="input-group">
-          <input type="password" placeholder="Senha" id="input-password">
+          <input type="password" placeholder="Senha" id="input-password" autocomplete="off">
           <i class="bi bi-eye-fill" id="btn-view-password"></i>
           <div class="underline">
+            <p class="error"></p>
             <a href="#">Esqueceu a senha?</a>
           </div>
         </div>
-        
 
         <div class="btns">
           <div class="btn-login">
-            <a href="#"><button>Login</button></a>
+            <a href="">Login</a>
           </div>
 
           <span>OU</span>
 
           <div class="btn-google">
-            <a href="#"><button>Continue com o Google</button></a>
+            <a href="">Continue com o Google</a>
             <img src="../imgs/google.svg" alt="">
           </div>
         </div>
       </form>
     </div>
 
-    <aside class="img-container">
+    <aside class="img-container" id="img-container">
       <div class="img">
         <img src="../imgs/produto-Transformando-a-Educacao-Acessibilidade-e-Inclusao-Escolar-para-Todos.webp" alt="">
       </div>
