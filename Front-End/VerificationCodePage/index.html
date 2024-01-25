@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Código de Verificação</title>
   <link rel="icon" href="/Front-End/imgs/pargus (1)-fotor-20231203232120.png">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
@@ -20,9 +20,8 @@
       <ul class="menu">
         <li><a class="items-menu" href="../InitialPage/index.html">Início</a></li>
         <li><a class="items-menu" href="#">Login</a></li>
-        <a href="../CreateAccountPage/index.html"><button id="btn-signUp-mobile">Criar Conta</button></a>
+        <a href="../CreateAccountPage/index.html"><button id="btn-signUp">Criar Conta</button></a>
       </ul>
-      <a href="../CreateAccountPage/index.html"><button id="btn-signUp">Criar Conta</button></a>
       
       <button class="hamburguer-menu"></button>
     </nav>
@@ -33,36 +32,25 @@
 
       <div class="header-form">
         <div class="title">
-          <h2>Bem-Vindo</h2>
+          <h2>Código de Verificação</h2>
         </div>
 
+        <div class="subtitle">
+          <p>Verifique se há um código de verificação para <strong>exemplo123@gmail.com.</strong> <a href="../ConfirmationEmailPage/index.html">mudar</a></p>
+        </div>
         <div class="icon">
           <img src="../imgs/pargus_tech_2.jpg" alt="Logo da Pargus Tech">
         </div>
       </div>
 
       <div class="input-field">
-        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Código de 4 Dígitos">
         <div class="underline"></div>
       </div>
 
-      <div class="input-field">
-        <input type="password" placeholder="Senha" id="input-password">
-        <i class="bi bi-eye-fill" id="btn-view-password"></i>
-        <div class="underline">
-          <a href="../ConfirmationEmailPage/index.html">Esqueceu a senha?</a>
-        </div>
+      <div class="btn-verification">
+        <a href="../RedefinePasswordPage/index.html">verificar</a>
       </div>
-
-      <div class="btn-login">
-        <a href=""><button>login</button></a>
-      </div>
-
-      <div class="google-login">
-        <button>Continue com o Google</button>
-        <img src="../imgs/google.svg" alt="">
-      </div>
-
     </form>
   </section>
   

@@ -2,7 +2,7 @@ function view_modal(modal){
   const modal_visible = document.querySelector(modal)
   modal_visible.classList.add('view-modal')
   modal_visible.addEventListener('click', (e) => {
-    if(e.target.className == 'close-modal'){
+    if(e.target.className === 'close-modal' || e.target.className === 'modal'){
       modal_visible.classList.remove('view-modal')
     }
   })
