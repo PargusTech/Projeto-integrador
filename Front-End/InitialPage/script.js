@@ -41,6 +41,14 @@ btn_hamburguer.addEventListener('touchstart', function(){
   nav_bar.classList.toggle("active")
 })
 
+const links = document.querySelectorAll(".items-menu");
+
+links.forEach(function(link) {
+  link.addEventListener('click', function() {
+    nav_bar.classList.remove("active");
+  });
+});
+
 /* const form = document.querySelector("#form-login")
 const email = document.querySelector("#input-email")
 const password = document.querySelector("#input-password") */
