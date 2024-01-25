@@ -42,7 +42,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  background-color: var(--primary-color);
+  background-color: #000000;
   align-items: center;
   padding: .6rem 1.75rem;
   position: fixed;
@@ -50,6 +50,10 @@ header {
   top: 0;
   right: 0;
   z-index: 1;
+}
+
+a{
+  text-decoration: none;
 }
 
 .logo h2 {
@@ -60,14 +64,13 @@ header {
 
 nav {
   display: flex;
-  gap: 2.2rem;
   align-items: center;
 }
 
 .menu-header {
   display: flex;
-  gap: 2.2rem;
   align-items: center;
+  gap: 2.2rem;
 }
 
 .menu-header li {
@@ -94,6 +97,7 @@ nav {
   font-size: 1.2rem;
   cursor: pointer;
   transition: .3s ease-in-out;
+  margin: 0 1rem 0 2.2rem;
 }
 
 .items-menu::after {
@@ -407,7 +411,6 @@ form .close-modal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .img {
@@ -469,8 +472,8 @@ form #btn-form-contact:hover {
 
 .container-text {
   width: 50%;
-  margin-left: 3rem;
 }
+
 
 .text-about-us {
   width: 75%;
@@ -520,6 +523,10 @@ form #btn-form-contact:hover {
   transition: .3s ease-in-out;
 }
 
+#btn-mobile {
+  display: none;
+}
+
 .btn-learn-more button:hover {
   opacity: .8;
 }
@@ -538,6 +545,11 @@ form #btn-form-contact:hover {
   color: var(--quaternary-color);
   font-weight: 600;
   font-size: 1.8rem;
+}
+
+.navbar-footer .menu {
+  display: flex;
+  gap: 1rem;
 }
 
 .navbar-footer a {
@@ -568,7 +580,6 @@ form #btn-form-contact:hover {
 .navbar-footer a:hover::after {
   transform: scaleX(1);
 }
-
 
 .container-social-media {
   display: flex;
@@ -619,6 +630,10 @@ form #btn-form-contact:hover {
   position: relative;
 }
 
+.btn-learn-more-mobile button {
+  display: none;
+}
+
 @keyframes modal {
   from {
     opacity: 0;
@@ -632,18 +647,15 @@ form #btn-form-contact:hover {
 }
 
 @keyframes menu-mobile-open {
-  from {
-    opacity: 0;
-    transform: translateY(-60px);
+  0%{
+    height: 0;
   }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  100%{
+    height: 40vh;
   }
 }
 
-@media(320px <= width <= 768px) {
+@media(320px <=width <=768px) {
 
   .hamburguer-menu {
     display: block;
@@ -670,7 +682,7 @@ form #btn-form-contact:hover {
 
   .navbar-header.active .menu-header {
     display: flex;
-    animation: menu-mobile-open .3s;
+    animation: menu-mobile-open .3s ease-in-out;
   }
 
   .navbar-header.active .hamburguer-menu {
@@ -683,7 +695,7 @@ form #btn-form-contact:hover {
 
   .navbar-header.active .hamburguer-menu::after {
     transform: rotate(-135deg);
-    top: -9px;
+    top: -9.5px;
   }
 
   #img-container {
@@ -694,26 +706,113 @@ form #btn-form-contact:hover {
     flex-direction: column-reverse;
   }
 
+  .section-about-us {
+    display: flex;
+    align-items: center;
+  }
+
   #btn-signUp {
     white-space: nowrap;
+    font-size: .9rem;
   }
 
-  .modal form{
-    width: 60%;
+  .modal form {
+    width: 90%;
   }
 
-  .section .form-container{
+  .section .form-container {
     width: 100%;
   }
 
-  .form-container form, h1{
+  .form-container {
+    width: 100%;
+  }
+
+  .form-container form, h1 {
     align-items: center;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    width: 100%;
   }
 
-  header{
-    position: relative;
+  .container-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-container {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-about-us p {
+    width: 100%;
+    line-height: 2.5rem;
+  }
+
+  #btn-learn-more {
+    display: none;
+  }
+
+  .btn-learn-more-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-learn-more-mobile button {
+    padding: .5rem 1rem;
+    border: none;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+
+  .btn-learn-more-mobile button:hover{
+    opacity: .8;
+  }
+  
+  header {
+    position: fixed;
+  }
+
+  .logo h2 {
+    white-space: nowrap;
+    font-size: 1.6rem;
+  }
+
+  .img-pargus {
+    width: 85%;
+    height: 250px;
+  }
+
+  .form-container h1 {
+    width: 100%;
+  }
+
+  .form-container .input-group, .input-group input {
+    width: 100%;
+  }
+
+  .btns, .btn-login, .btn-google {
+    width: 100%;
+  }
+
+  .copyright p {
+    text-align: center;
   }
 }
