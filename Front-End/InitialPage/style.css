@@ -463,6 +463,7 @@ form #btn-form-contact:hover {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .container-flex {
@@ -476,7 +477,6 @@ form #btn-form-contact:hover {
   text-align: center;
   font-weight: 600;
   font-size: 1.8rem;
-  margin-bottom: 3rem;
 }
 
 .container-text {
@@ -843,7 +843,7 @@ form #btn-form-contact:hover {
   }
 }
 
-@media(768px <= width <=1023px) {
+@media(768px <= width <= 1023px) {
 
   .img-pargus {
     width: 350px;
